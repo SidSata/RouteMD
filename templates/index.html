@@ -1,0 +1,25 @@
+{%extends "home.html" %}
+{% block title %} ROUTE MD {% endblock %}
+{% block content %}
+<header>
+      <div class="container-fluid">
+        <div id="logo" class="col-md-3 text-center">
+          <img src="{{ url_for('static', filename='images/logo.png') }}">
+        </div>
+        <div id="links" class="col-md-3 text-center">
+          <ul class='center-links'>
+           <a href="about"><button class="btn btn-success" >About Us</button></a>
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default top-right-display">
+                <div class="panel-heading">Government Hospital X</div>
+                <div class="panel-body">
+                    <h4><p><strong>Current number of patients:</strong> {{content[0]}}</p>
+                    <p><strong>Total capacity:</strong> {{content[1]}}</p></h4>
+                </div>
+              </div>
+        </div>
+      </div>
+    </header>
+{% endblock %}

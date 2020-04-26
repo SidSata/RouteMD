@@ -1,0 +1,134 @@
+{%extends "base.html" %}
+{% block title %} Add Patient {% endblock %}
+{% block content %} 
+<body style = "background-color: #03DAC6;">
+<div style="text-align:center; margin-top: 10px;">
+	<h1 class="card-title">Add Patient</h1>
+	{% with messages = get_flashed_messages()%}
+		{% if messages %}
+			{% for msg in messages%}
+				<p> {{msg}} </p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<form style = "margin: 50px auto; width: 320px;" method = "POST">
+		<div class="form-group">
+			<label for="Name">Name</label>
+			<input type="text" name="name" class="form-control" id="formGroupExampleInput2">
+		</div>
+
+
+		<div class="form-group">
+	        <label for="Age">Age</label>
+	       	<input type="number" name="age" min="1" max="120" class="form-control" id="formGroupExampleInput2">
+	   	</div>
+			
+
+		<div class="form-group">
+				<label for="Gender">Gender</label>
+				<select name="gender" class = "form-control">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+		</div>
+
+
+		<div class="form-group">
+			<label for="Mobile">Mobile Number</label>
+			<input type="text" class="form-control" id="formGroupExampleInput2" name = "mobile">
+		</div>
+
+
+		<div class="form-group">
+			<label for="email">Email ID</label>
+			<input type="email" class="form-control" id="formGroupExampleInput2" name = "email">
+		</div>
+
+		<div class="form-group">
+			<label for="Bloodgroup">Bloodgroup</label>
+			<select name="blood" class="form-control">
+			<option value="O+">O+</option>
+			<option value="A+">A+</option>
+			<option value="B+">B+</option>
+			<option value="AB+">AB+</option>
+			<option value="O-">O-</option>
+			<option value="A-">A-</option>
+			<option value="B-">B-</option>
+			<option value="AB-">AB-</option>
+			
+		</select>
+		</div>
+
+		<div class="form-group">
+				<label for="Alochol">Alcoholism-Drug History</label>
+				<select name="alcohol" class = "form-control">
+				<option value="True">True</option>
+				<option value="False">False</option>
+			
+				
+		</select>
+		</div>
+
+		<div class="form-group">
+				<label for="Criminal">Criminal History</label>
+				<select name="criminal" class = "form-control">
+				<option value="True">True</option>
+				<option value="False">False</option>
+			
+				
+			</select>
+			
+		</div>
+
+
+		<div class="form-group">
+				<label for="Critical">Critical Need</label>
+				<select name="critical" class = "form-control">
+				<option value="True">True</option>
+				<option value="False">False</option>
+			
+				
+			</select>
+		</div>
+
+
+		<div class="form-group">
+			<label for="Disease">Disease</label>
+				<select name="disease" class = "form-control">
+				{% for data in content%}
+					<option value="{{data}}">{{data}}</option>
+				{% endfor %}
+				</select>
+		</div>
+
+
+		<div class="form-group">
+			<label for="Economic">Economic status</label>
+			<input type="number" name="eco_status" placeholder="Annual Income" min="0" class="form-control" id="formGroupExampleInput2">
+		</div>
+
+
+		<div class="form-group">
+				<label for="Marital">Marital Status</label>
+				<select name="marital_status" class = "form-control">
+				<option value="married">Married</option>
+				<option value="single">Single</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+		<label for="Dependants">Number of dependents</label>
+		<input type="number" name="dependents" min="0" class="form-control" id="formGroupExampleInput2">
+		</div>
+			
+        <div class="form-group">
+        	<input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+        <a class="btn btn-danger" href="/" role="button">Home Page</a>
+	</form>
+	<br/>
+	<br/>
+
+</div>
+</body>
+{% endblock %}

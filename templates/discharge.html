@@ -1,0 +1,34 @@
+{%extends "base.html" %}
+{% block title %} Discharge Patient {% endblock %}
+{% block content %} 
+<body style = "background-color: #00BFFF;">
+<div style="text-align:center; margin-top: 10px;">
+	<h1 class="card-title">Discharge Patient</h1>
+	{% with messages = get_flashed_messages()%}
+		{% if messages %}
+			{% for msg in messages%}
+				<p> {{msg}} </p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<form style = "margin: 50px auto; width: 320px;" method = "POST">
+		<div class="form-group">
+			<label for="Name">Name</label>
+			<input type="text" name="name" class="form-control" id="formGroupExampleInput2">
+		</div>
+
+
+		<div class="form-group">
+			<label for="PatientID">Patient ID: </label>
+			<input type="number" name="patient_id" class="form-control" id="formGroupExampleInput2">
+			
+		</div>
+
+	    <div class="form-group">
+	    	<input type="submit" value="Submit" class="btn btn-success">
+	    </div>
+	    <a class="btn btn-danger" href="/" role="button">Home Page</a>
+	</form>
+</div>
+</body>
+{% endblock %}

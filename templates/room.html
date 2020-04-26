@@ -1,0 +1,66 @@
+{%extends "base.html" %}
+{% block title %} Discharge Patient {% endblock %}
+{% block content %} 
+<body style = "background-color: #00BFFF;">
+  <h1 class="card-title" style="text-align:center; margin-top: 10px;">Current Rooms</h1>
+<div style="text-align:left; margin: auto; width: 25%;">
+  {% for data,value in content.items() %}
+    <h3>{{data}}:</h3>
+    {% for x in value %}
+      {% for key,val in x.items() %}
+        <li> {{key}} : {{val}} </li>
+      {%endfor%}
+      <br/>
+    {% endfor %}
+    {% endfor %}
+  </div>
+    <div style = "margin: auto; width: 50%; ">
+    <form method="POST" action = "addroom" style = "margin: auto; width: 50%; ">
+      <br/>
+      <h1 style="text-align:center;"> Add Room </h1>
+      <br/>
+      <div class="form-check">
+        <h4><input class="form-check-input" type="radio" name="critical" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Non Critical
+        </label></h4>
+      </div>
+      <div class="form-check">
+        <h4><input class="form-check-input" type="radio" name="critical" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Critical
+        </label></h4>
+      </div>
+      <div class="form-group row">
+        <h4><label for="inputPassword" class="col-sm-2 col-form-label">Name</label><h4>
+        <div class="col-sm-10"  style = "width: 700px;">
+          <input type="text" class="form-control" name = "name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <h4><label for="inputPassword" class="col-sm-2 col-form-label">Capacity</label></h4>
+        <div class="col-sm-10"   style = "width: 700px;">
+          <input type="number" class="form-control" name = "capacity">
+        </div>
+        <br/>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-success">
+      </div>
+    </form>
+    <br/>
+    <form method="POST" action = "removeroom" style = "margin: auto; width: 50%; ">
+      <h1 style="text-align:center;"> Remove Room </h1>
+      <div class="form-group row">
+        <h4><label for="inputPassword" class="col-sm-2 col-form-label">Name</label></h4>
+        <div class="col-sm-10"  style = "width: 700px;">
+          <input type="text" class="form-control" name = "name">
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Remove" class="btn btn-danger">
+      </div>
+    </form>
+  </div>
+</body>
+{% endblock %}

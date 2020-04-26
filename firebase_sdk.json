@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cal-hacknow-2020",
+  "private_key_id": "05332bc32d6d623b5417d89f561a01e7ff80f3c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCSjFVowgJrgtNI\nYO72acrWbpSieeYYBD/13a+elNJEjTgiiZnjARRKPCkH5Np3yc6KXShIvaGG+8g4\nblvLBoyFAbfBG6qdXFBW5yPCuiup+30O+MxNt0QIJsyTJMFzsgPQ1eUyQcnHuFiE\nKjkBAnfBHaHkk3P6lbjLymUwcLRwUgySL9UI3uLb2gSNNENiZGpAqJ4kKDDrOAMt\nDZK6utTf/kgFE7vC22nvGIIway5jRBDRbLZxflF9VMLEB/pgOo8blCJFzGw9AY0J\nMIaMxkOZSX1EJk7GzWu7Nfh/EDJNmKZBOg4x4pkzZwzZeA8lRNjAnSNrieiidHGa\n3ZCi5ZT9AgMBAAECgf9F1jed0a+KXnf2ts0yH+RIEZs7+xAtIMUGQLlEXUyyPeoN\nO4RiuRrZKS5W7WwNOWG4Ew0L3iXo9YLceJvUIAO2fehHyGII3empmKQdaG41swVv\nQ7JfO6uHZljeWItWDFtnshqa4Wsgn6gkFq3CYbtGVSPqa5zUwlg2lPCTn5aOOKup\n+iB71v5i6leXejntVfvJACyqK2E2hFo60KqSe8X3F5ftdJSrzzkyaO0nLiX13hUA\nkAx5/vws72Tfyp/TCYJ4XDnyQpjJDyCufMR58WvDL6ppwD7jbWvIsaLrb9Aoxka4\nG96xTqzlaSPVjIvpWQFfNhxNnsg3r30ByUGmcoMCgYEAwcC8j5xQP2eIV0fZw8em\nPif1+SO57cr0uGm/U0sxjqWoy1Jh/LENoMuMtEpZUCml9wF2AzkpfUFAAYVeazvN\nrPavzLSCgK5ENCPUmM1HieAjmEyPP5EB+b8tNWl8BiMvplQLatr80EaKna9LLqeE\nC80HjKuwsQvtfpUD6LIX2x8CgYEAwaE7gh8RvHz0EWhfVo7us2rUZ1cNxRiyUgGD\nF7awmiv+eAhJriC5Gy4Hy69XzH+nSE/QCJm/JrCG4hkYfqUT0mKbbUzUiQ2utpMs\npM6yaFCMAyFT8CnOl9QZ2u19KYha0W+oXTWpa0e7xxQDDbv0sPkDk1Db9rSsGwKv\n9lexKGMCgYAZ+AtN9FWNKgNML4UwiIHvsst1KSSyipFiZkoOj/WEeQ+2sMQRamm5\nM48YWx69b9ee08NNi0vUTfqWOZn+JXXbyPSnK0qSlMjvdB36nQkJodEjiJ9qlbT+\nFHGqxwioie7JDFq7Z76a69mIaQZaqnk4W7K3WAvGryKV5MMxXS11YQKBgQCIvNyy\nWlCDJFaTiHpzPQLSjymqRK7DtloPUWQLNgdnCJRunaOypQcza4Ez1QKStr8icMJ/\noFt97gGC36gNn3PtCZerSyt4EcKEylAnnpQc2GzXtQx6uHtdevo7QaU21EUWS9zA\n3iljSkgQIVC6vTXiWCevO9XqVdKITJCIzYqc8wKBgHuDe9XISXpLry33aDaoYQZO\njcsSKCwqLzMwIIZ58t4ABi8eef3VtwZOJCHHLjMWveJUELTyPYOAzcL5aGApD4Xi\n0NTqI8VVIdbhasgTDRgwOwRaqsmYBiv2xP/3pFz5qiluYChJz0Opt0qve0huvQji\n5UGCzycRw/lygBnZOiwt\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-qaed1@cal-hacknow-2020.iam.gserviceaccount.com",
+  "client_id": "111205991764464885211",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qaed1%40cal-hacknow-2020.iam.gserviceaccount.com"
+}

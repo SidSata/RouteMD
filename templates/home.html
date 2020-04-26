@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/info_styles.css') }}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- <script src = "{{ url_for('static', filename='scripts/infoscript.js') }}"></script> -->
+      <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script  src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+      <title>{%block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {% block content %} 
+    {% endblock %}
+    <main>
+               <div style = "margin: auto; width: 50%; ">
+                <a href="add"><button class="btn btn-lg btn-block btn-primary" id="add-patient-button">Add Patient</button></a>
+                <br/>
+                <a href="update"><button class="btn btn-lg btn-block btn-info" id="update-details-button">Update Details</button></a>
+                <br/>
+                <a href="discharge"><button class="btn btn-lg btn-block btn-warning" id="remove-patient-button">Remove Patient</button>
+                <br/>
+                <a href="room"><button class="btn btn-lg btn-block btn-primary" id="remove-patient-button">Manage Rooms</button></a>
+                <br/>
+              </div>
+              <br/>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
